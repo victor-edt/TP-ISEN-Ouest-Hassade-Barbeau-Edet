@@ -4,87 +4,72 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Informations et orientation post-bac : études, métiers, formations, conseils.">
-<title>Header + Footer + Image - Orientation Post-Bac</title>
- 
-  <style>
-    header {
-      text-align: center;
-      padding: 20px;
-    }
- 
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
- 
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
- 
-    nav a {
-      text-decoration: none;
-      color: #0078d4;
-      font-weight: bold;
-    }
- 
-    nav a:hover {
-      text-decoration: underline;
-    }
- 
-    .logo {
-      display: block;
-      margin: 20px auto;
-      max-width: 200px;
-      border-radius: 10px;
-    }
- 
-    footer {
-      background-color: #f5f5f5;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.9em;
-      color: #555;
-      border-top: 1px solid #ddd;
-    }
- 
-    footer a {
-      color: #0078d4;
-      text-decoration: none;
-    }
- 
-    footer a:hover {
-      text-decoration: underline;
-    }
+<title>Orientation Post-Bac</title>
+
+<style>
+  :root { --brand:#2563eb; --border:#e5e7eb; --muted:#555; --bg:#fff; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:#222; }
+
+  /* --- Bandeau repris de index.html --- */
+  header { background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+  .container { max-width: 1100px; margin: 0 auto; padding: 16px 20px; }
+  nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+  nav .brand { font-weight:700; color:var(--brand); text-decoration:none; font-size:1.2rem; }
+  nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+  nav a { text-decoration:none; color:inherit; padding:.5rem .75rem; border-radius:.5rem; }
+  nav a:hover { background:#f3f4f6; }
+  nav a[aria-current="page"] { background:#e9eefb; font-weight:600; }
+
+  /* --- Contenu principal --- */
+  main { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; text-align:center; }
+  h1 { margin-top:0; }
+  .logo { display:block; margin: 20px auto; max-width:200px; border-radius:10px; }
+
+  /* --- Footer --- */
+  footer { background-color: #f5f5f5; text-align: center; padding: 15px 0; font-size: 0.9em; color: var(--muted); border-top: 1px solid #ddd; }
+  footer a { color: var(--brand); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
 </style>
 </head>
- 
+
 <body>
-<header>
-<h1>Orientation Post-Bac</h1>
- 
-    <!-- Image provenant d'Internet -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Logo_education_nationale_2013.svg/512px-L…
+
+  <!-- F21 Header_simple — harmonisé avec index.html -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="index.html">Accueil</a>
+        <ul>
+          <li><a aria-current="page">Post-bac</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="devenir_inge.html">Devenir Ingé</a></li>
+          <li><a href="apprentissage.html">Apprentissage</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Orientation Post-Bac</h1>
+    <!-- Image sous le bandeau -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Logo_education_nationale_2013.svg/512px-Logo_education_nationale_2013.svg.png"
          alt="Logo Éducation nationale"
          class="logo">
- 
-    <nav>
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li><a href="formations.html">Formations</a></li>
-<li><a href="metiers.html">Métiers</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
- 
+
+    <p>Explorez les différentes voies d’orientation après le baccalauréat : formations, métiers, et conseils pour construire votre avenir.</p>
+  </main>
+
+  <!-- F22 Footer_simple -->
   <footer>
-<p>&copy; 2025 Orientation Post-Bac — Tous droits réservés.</p>
-<p>
-<a href="mentions-legales.html">Mentions légales</a> |
-<a href="confidentialite.html">Politique de confidentialité</a> |
-<a href="contact.html">Contact</a>
-</p>
-</footer>
+    <p>&copy; 2025 Orientation Post-Bac — Tous droits réservés.</p>
+    <p>
+      <a href="mentions-legales.html">Mentions légales</a> |
+      <a href="confidentialite.html">Politique de confidentialité</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
 </body>
 </html>
