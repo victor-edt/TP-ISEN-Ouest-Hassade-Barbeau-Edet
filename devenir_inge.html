@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Devenir ingénieur</title>
   <style>
-    :root { --bg:#fff; --ink:#222; --muted:#666; --panel:#f4f4f5; --border:#e5e7eb; }
+    :root { --bg:#fff; --ink:#222; --muted:#666; --panel:#f4f4f5; --border:#e5e7eb; --brand:#2563eb; }
     * { box-sizing: border-box; }
     body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
     a { color:inherit; text-decoration:none; }
-    header, footer { background: var(--panel); border-bottom:1px solid var(--border); }
-    footer { border-top:1px solid var(--border); border-bottom:none; color:var(--muted); }
+    header, footer { background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+    footer { border-top:1px solid var(--border); border-bottom:none; color:var(--muted); background: var(--panel); }
     .wrap { max-width: 1000px; margin: 0 auto; padding: 16px 20px; }
-    nav a { margin-right: 14px; padding:6px 8px; border-radius:6px; }
+    /* Bandeau repris de index.html */
+    nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+    nav .brand { font-weight:700; color:var(--brand); text-decoration:none; }
+    nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+    nav a { text-decoration:none; color:inherit; padding:.5rem .75rem; border-radius:.5rem; }
+    nav a:hover { background:#f3f4f6; }
     nav a[aria-current="page"] { background:#e9eefb; font-weight:600; }
+
     main.wrap { padding-top: 28px; padding-bottom: 28px; }
     .text-img { display:grid; grid-template-columns: 1fr; gap: 20px; align-items:start; }
     @media (min-width: 768px) { .text-img { grid-template-columns: 1.2fr .8fr; } }
@@ -25,46 +31,47 @@
 </head>
 <body>
 
-  <!-- Header viendra au commit F31 -->
-
+  <!-- F31 Header_simple — repris du bandeau de index.html -->
   <header>
-  <div class="wrap">
-    <nav aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <a aria-current="page">Devenir ingénieur</a>
-      <a href="formations.html">Formations</a>
-      <a href="postbac.html">Post-bac</a>
-      <a href="apprentissage.html">Apprentissage</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="index.html">Accueil</a>
+        <ul>
+          <li><a href="apprentissage.html">Apprentissage</a></li>
+          <li><a href="postbac.html">Post-bac</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a aria-current="page">Devenir Ingé</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main class="wrap">
     <h1>Devenir ingénieur</h1>
-    <!-- Bloc texte+image viendra au commit F33 -->
-     <section class="text-img">
-  <div class="card">
-    <h2>Parcours & compétences</h2>
-    <p>
-      Découvrez les voies d’accès, les compétences clés à développer (scientifiques, techniques,
-      humaines) et les projets typiques réalisés au cours de la formation d’ingénieur.
-    </p>
-    <p>
-      Les étudiants évoluent par la pratique (TP, projets, stages) et collaborent en équipe pour
-      résoudre des problèmes concrets issus du monde industriel.
-    </p>
-  </div>
-  <img src="https://picsum.photos/720/480" alt="Étudiants travaillant sur un projet technique">
-</section>
 
+    <!-- F33 Text_img -->
+    <section class="text-img">
+      <div class="card">
+        <h2>Parcours & compétences</h2>
+        <p>
+          Découvrez les voies d’accès, les compétences clés à développer (scientifiques, techniques,
+          humaines) et les projets typiques réalisés au cours de la formation d’ingénieur.
+        </p>
+        <p>
+          Les étudiants évoluent par la pratique (TP, projets, stages) et collaborent en équipe pour
+          résoudre des problèmes concrets issus du monde industriel.
+        </p>
+      </div>
+      <img src="https://picsum.photos/720/480" alt="Étudiants travaillant sur un projet technique">
+    </section>
   </main>
 
-  <!-- Footer viendra au commit F32 -->
- <footer>
-  <div class="wrap">
-    <small>© 2025 ISEN — Page « Devenir ingénieur »</small>
-  </div>
-</footer>
+  <!-- F32 Footer_simple -->
+  <footer>
+    <div class="wrap">
+      <small>© 2025 ISEN — Page « Devenir ingénieur »</small>
+    </div>
+  </footer>
 </body>
 </html>
