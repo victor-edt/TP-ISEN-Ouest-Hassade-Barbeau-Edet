@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apprentissage — Projet E1</title>
+  <style>
+    :root { --maxw: 1100px; --gap: 1rem; --bg: #f7f7f9; --fg: #1f2937; --brand:#2563eb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, Arial, sans-serif; color: var(--fg); background: var(--bg); }
+    header, footer { background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 1rem; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap: var(--gap); }
+    nav .brand { font-weight:700; color:var(--brand); text-decoration:none; }
+    nav ul { list-style:none; display:flex; gap: var(--gap); margin:0; padding:0; }
+    nav a { text-decoration:none; color:inherit; padding:.5rem .75rem; border-radius:.5rem; }
+    nav a:hover { background:#f3f4f6; }
+    .two-col { display:grid; grid-template-columns: 1fr 1fr; gap: var(--gap); align-items:center; }
+    @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
+    .img-resp { width:100%; height:auto; border-radius:.5rem; display:block; }
+    h1,h2 { margin:.2rem 0 1rem; }
+    footer .small { font-size:.9rem; color:#6b7280; }
+  </style>
+</head>
+<body>
+
+  <!-- F15 Header_simple -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="index.html">MonSite</a>
+        <ul>
+          <li><a href="apprentissage.html">Apprentissage</a></li>
+          <li><a href="postbac.html">Post-bac</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="devenir_inge.html">Devenir Ingé</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Apprentissage</h1>
+
+    <!-- F17 Text_img -->
+    <section class="two-col">
+      <div>
+        <h2>Découvrir par la pratique</h2>
+        <p>
+          Cette page présente l’apprentissage : alternance, projets, et ressources.
+          Ajoute ici le contenu spécifique (programme, objectifs, compétences cibles, etc.).
+        </p>
+        <p>
+          Tu peux détailler des parcours types, des exemples de travaux, ou des conseils méthodo.
+        </p>
+      </div>
+      <div>
+        <img class="img-resp" src="https://picsum.photos/800/600?appr" alt="Illustration apprentissage">
+      </div>
+    </section>
+  </main>
+
+  <!-- F16 Footer_simple -->
+  <footer>
+    <div class="container">
+      <p class="small">© 2025 — Projet Web – Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
