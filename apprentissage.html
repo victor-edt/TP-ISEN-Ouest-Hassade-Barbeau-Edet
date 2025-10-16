@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Accueil — Projet E1</title>
+  <title>Apprentissage — Projet E1</title>
   <style>
     :root { --maxw: 1100px; --gap: 1rem; --bg: #f7f7f9; --fg: #1f2937; --brand:#2563eb; }
     * { box-sizing: border-box; }
@@ -15,17 +15,16 @@
     nav ul { list-style:none; display:flex; gap: var(--gap); margin:0; padding:0; }
     nav a { text-decoration:none; color:inherit; padding:.5rem .75rem; border-radius:.5rem; }
     nav a:hover { background:#f3f4f6; }
-    .hero { padding: 3rem 0; text-align:center; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: var(--gap); }
-    .card { background:#fff; border:1px solid #e5e7eb; border-radius:.75rem; padding:1rem; }
+    .two-col { display:grid; grid-template-columns: 1fr 1fr; gap: var(--gap); align-items:center; }
+    @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
     .img-resp { width:100%; height:auto; border-radius:.5rem; display:block; }
-    h1,h2,h3 { margin: .2rem 0 1rem; }
+    h1,h2 { margin:.2rem 0 1rem; }
     footer .small { font-size:.9rem; color:#6b7280; }
   </style>
 </head>
 <body>
 
-  <!-- F11 Header_simple -->
+  <!-- F15 Header_simple -->
   <header>
     <div class="container">
       <nav>
@@ -41,43 +40,28 @@
     </div>
   </header>
 
-  <main>
-    <section class="container hero">
-      <h1>Bienvenue</h1>
-      <p>Page d’accueil du projet — Élève 1</p>
-    </section>
+  <main class="container">
+    <h1>Apprentissage</h1>
 
-    <!-- F13 Images -->
-    <section class="container">
-      <h2>Galerie</h2>
-      <div class="grid">
-        <img class="img-resp" src="https://picsum.photos/600/400?1" alt="Illustration 1">
-        <img class="img-resp" src="https://picsum.photos/600/400?2" alt="Illustration 2">
-        <img class="img-resp" src="https://picsum.photos/600/400?3" alt="Illustration 3">
+    <!-- F17 Text_img -->
+    <section class="two-col">
+      <div>
+        <h2>Découvrir par la pratique</h2>
+        <p>
+          Cette page présente l’apprentissage : alternance, projets, et ressources.
+          Ajoute ici le contenu spécifique (programme, objectifs, compétences cibles, etc.).
+        </p>
+        <p>
+          Tu peux détailler des parcours types, des exemples de travaux, ou des conseils méthodo.
+        </p>
       </div>
-    </section>
-
-    <!-- F14 Block -->
-    <section class="container">
-      <h2>Nos atouts</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Qualité</h3>
-          <p>Standards élevés et bonnes pratiques.</p>
-        </div>
-        <div class="card">
-          <h3>Pédagogie</h3>
-          <p>Explications claires, exemples concrets.</p>
-        </div>
-        <div class="card">
-          <h3>Ouverture</h3>
-          <p>Orientation post-bac et métiers.</p>
-        </div>
+      <div>
+        <img class="img-resp" src="https://picsum.photos/800/600?appr" alt="Illustration apprentissage">
       </div>
     </section>
   </main>
 
-  <!-- F12 Footer_simple -->
+  <!-- F16 Footer_simple -->
   <footer>
     <div class="container">
       <p class="small">© 2025 — Projet Web – Tous droits réservés.</p>
